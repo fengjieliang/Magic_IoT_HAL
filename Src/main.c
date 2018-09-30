@@ -118,33 +118,9 @@ int main(void)
   MX_I2C1_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-	
-	uint8_t read_data[256];
-	memset(read_data,0,256);
-	uint8_t write_data[300];
-	memset(write_data,0,300);
-	
 	HAL_UART_Receive_IT(&huart1,&USART_RXSingleBuffer,1);		//使能串口中断，串口接收的数据存储在USART_RXBuffer里
 	printf("******STM32 DevBoard Start!!!******\r\n");
 	BSP_W25Qx_Init();
-	
-	
-//	W25X128_ChipErase();
-//	W25X128_SectorErase(0);
-//	W25X128_BlockErase(0);
-	
-//	for(int i=0;i<256;i++)
-//	{write_data[i]=i;}
-//	for(int i=256;i<300;i++)
-//	{write_data[i]=i-256;}
-//	
-//	W25X128_BufferWrite(write_data,300,0);
-//	
-//	W25X128_BufferRead(read_data,300,0);
-//	for(int i=0;i<300;i++){
-//		printf("read_data[%d]=%x\r\n",i,read_data[i]);
-//	}
-	
 	EEPROM_Test();
 	
   /* USER CODE END 2 */
