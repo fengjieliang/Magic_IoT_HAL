@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F407xx,USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include;              ../Inc;              ../Drivers/STM32F4xx_HAL_Driver/Inc;              ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;              ../Drivers/CMSIS/Include;              .\User Module\Peripheral\inc;              .\User Module\Middle Application Layer\inc;              ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy</IncludePath>
+              <IncludePath>C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include;                 ../Inc;                 ../Drivers/STM32F4xx_HAL_Driver/Inc;                 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;                 ../Drivers/CMSIS/Include;                 .\User Module\Peripheral\inc;                 .\User Module\Middle Application Layer\inc;                 ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -457,6 +457,11 @@
               <FileName>bsp_spi_flash.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User Module\Peripheral\src\bsp_spi_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User Module\Peripheral\src\bsp_key.c</FilePath>
             </File>
           </Files>
         </Group>

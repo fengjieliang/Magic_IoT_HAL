@@ -50,6 +50,12 @@
 
 /* Private define ------------------------------------------------------------*/
 
+#define Key2_Pin GPIO_PIN_2
+#define Key2_GPIO_Port GPIOE
+#define Key3_Pin GPIO_PIN_3
+#define Key3_GPIO_Port GPIOE
+#define Key1_Pin GPIO_PIN_4
+#define Key1_GPIO_Port GPIOE
 #define LED0_Pin GPIO_PIN_9
 #define LED0_GPIO_Port GPIOF
 #define LED1_Pin GPIO_PIN_10

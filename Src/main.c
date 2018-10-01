@@ -49,6 +49,7 @@
 #include "bsp_led.h"
 #include "bsp_eeprom.h"
 #include "bsp_spi_flash.h"
+#include "bsp_key.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -132,7 +133,19 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+		uint8_t data=0;
+		data=Key_Scan(1);
+		
+		if(data==1)
+		{BSP_LED_Toggle(BSP_LED_0);
+			HAL_Delay(200);}
+		else if(data==2)
+		{BSP_LED_Toggle(BSP_LED_0);
+			HAL_Delay(200);}
+		else if(data==3)
+		{BSP_LED_Toggle(BSP_LED_0);
+			HAL_Delay(200);}
+		
   }
   /* USER CODE END 3 */
 
